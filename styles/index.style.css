@@ -1,0 +1,22 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+    height: 100vh;
+}
+
+.header-container,
+.footer-container,
+.profile-container {
+    height: 10%;
+}
+
+.content-container {
+    height: 70%;
+}
