@@ -4,19 +4,22 @@
     box-sizing: border-box;
 }
 
-.main-container {
+.welcome-container {
     display: flex;
     flex-direction: column;
     padding: 0 20px;
+}
+
+.up-view-container,
+.bottom-view-container {
     height: 100vh;
 }
 
 .header-container,
 .footer-container,
-.profile-container {
+.title-container{
     height: 10%;
 }
-
-.content-container {
-    height: 70%;
+.areas-container{
+    height: 80%;
 }
