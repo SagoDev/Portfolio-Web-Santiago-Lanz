@@ -26,31 +26,31 @@
 
                 .brand-container {
                     img {
-                        width: 50px;
-                        height: 50px;
+                        width: 55px;
+                        height: 55px;
                         border-radius: 100%;
                         border: 4px solid rgb(255, 255, 255);                        
                     }
 
                     a {
                         font-family: 'Noto Serif Khitan Small Script', sans-serif;
-                        font-weight: bold;                                                           
+                        font-weight: bold;
                         text-decoration: none;
                         font-size: 15px;
-                        color: #000000;                 
-                        
+                        color: #000000;
+
                     }
                 }
 
                 .nav-container {
                     li {
-                        font-family: 'Noto Serif Khitan Small Script', sans-serif;                                                                                                                                                                                                                                                                                                                                                                 
+                        font-family: 'Noto Serif Khitan Small Script', sans-serif;
                         padding: 20px;
-                        font-size:18px;
+                        font-size: 18px;
                         text-decoration: none;
 
                         a {
-                            color: #464646;
+                            color: #383838;
                         }
                     }
                 }
@@ -66,6 +66,10 @@
                 P.text {
                     font-family: 'Nunito', sans-serif;
                     font-size: 2rem;
+
+                    a {
+                        color: rgb(92, 92, 255);
+                    }
                 }
 
                 p.pre-title {
@@ -73,6 +77,13 @@
                     font-size: 20px;
                     font-weight: bolder;
                     color: rgb(92, 92, 255);
+                }
+
+                h1 {
+                    font-family: 'Noto Serif Khitan Small Script', sans-serif;
+                    font-weight: bolder;
+                    font-size: 5.5rem;
+                    color: #383838;
                 }
             }
         }
@@ -89,6 +100,7 @@
 
         .areas-container {
             height: 80%;
+            
         }
     }
 }
