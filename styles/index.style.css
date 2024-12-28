@@ -29,29 +29,28 @@
                         width: 50px;
                         height: 50px;
                         border-radius: 100%;
-                        border: 4px solid rgb(167, 159, 159);
-                        ;
+                        border: 4px solid rgb(255, 255, 255);                        
                     }
 
                     a {
+                        font-family: 'Noto Serif Khitan Small Script', sans-serif;
+                        font-weight: bold;                                                           
                         text-decoration: none;
-                        font-family: 'Signika SC', sans-serif;
-                        font-size: 20px;
-                        font-weight: bolder;
-                        color: rgb(51, 51, 129);
+                        font-size: 15px;
+                        color: #000000;                 
+                        
                     }
                 }
 
                 .nav-container {
                     li {
+                        font-family: 'Noto Serif Khitan Small Script', sans-serif;                                                                                                                                                                                                                                                                                                                                                                 
                         padding: 20px;
-                        font-family: 'Signika SC', sans-serif;
-                        font-size: 20px;
-                        font-weight: bolder;
+                        font-size:18px;
                         text-decoration: none;
 
                         a {
-                            color: rgb(51, 51, 129);
+                            color: #464646;
                         }
                     }
                 }
@@ -70,10 +69,10 @@
                 }
 
                 p.pre-title {
-                    font-family: 'Signika SC', sans-serif;
-                    font-size: 25px;
-                    font-weight: bold;
-                    color: rgb(51, 51, 129);
+                    font-family: 'NRT Reg', sans-serif;
+                    font-size: 20px;
+                    font-weight: bolder;
+                    color: rgb(92, 92, 255);
                 }
             }
         }
