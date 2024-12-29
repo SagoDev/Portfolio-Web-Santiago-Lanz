@@ -9,10 +9,10 @@
     flex-direction: column;
     padding: 0 60px;
 
-    .view-container {
+    .first-view-container {
         height: 100vh;
 
-        .header-container {
+        .navBar-container {
             height: 20%;
             display: flex;
             justify-content: center;
@@ -42,7 +42,7 @@
                     }
                 }
 
-                .nav-container {
+                .options-container {
                     li {
                         font-family: 'Noto Serif Khitan Small Script', sans-serif;
                         padding: 20px;
@@ -57,21 +57,21 @@
             }
         }
 
-        .about-container {
+        .about-first-view {
             height: 80%;
 
-            .about-header {
+            .first-view-header {
                 height: 100%;
                 display: flex;
                 justify-content: center;
                 align-items: center;
 
                 .text-header {
-                  display: flex;
-                  flex-direction: column;
-                  gap: 15px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 15px;
 
-                    .title-header {
+                    .title-first-view {
                         height: 20%;
                         text-align: center;
 
@@ -84,7 +84,7 @@
                         }
                     }
 
-                    .paraph-header {
+                    .paraph-first-view {
                         height: 80%;
 
                         p {
@@ -103,9 +103,43 @@
 
         }
 
-        .footer-container {
-            height: 10%;
-        }
+    }
 
+    .second-view-container {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        padding: 0 200px;
+        gap: 3em;
+
+        .study-container,
+        .work-container {
+            p {
+                font-family: 'Nunito', sans-serif;
+                font-weight: bolder;
+                font-size: 20px;
+                text-align: justify;
+
+                a {
+                    font-family: 'Noto Serif Khitan Small Script', sans-serif;
+                    color: rgb(92, 92, 255);
+                }
+            }
+
+            h1 {
+                font-family: 'Noto Serif Khitan Small Script', sans-serif;
+                font-size: 35px;
+                color: #383838;
+                
+            }
+
+            .work-text {
+                padding: 15px;
+            }
+        }
+    }
+
+    .footer-container {
+        height: 10%;
     }
 }
