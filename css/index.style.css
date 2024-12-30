@@ -12,6 +12,13 @@
     .first-view-container {
         height: 100vh;
 
+        .navBar-container {
+            height: 20%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
         .profile-container {
             height: 80%;
             display: flex;
