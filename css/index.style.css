@@ -5,59 +5,15 @@
 }
 
 .main-container {
-    display: flex;    
+    display: flex;
     flex-direction: column;
     padding: 0 60px;
 
-    .view-container {
+    .first-view-container {
         height: 100vh;
-        .header-container {
-            height: 20%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
-            .header-inner {
-                width: 100%;
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-
-                .brand-container {
-                    img {
-                        width: 55px;
-                        height: 55px;
-                        border-radius: 100%;
-                        border: 4px solid rgb(255, 255, 255);
-                    }
-
-                    a {
-                        font-family: 'Noto Serif Khitan Small Script', sans-serif;
-                        font-weight: bold;
-                        text-decoration: none;
-                        font-size: 15px;
-                        color: #000000;
-
-                    }
-                }
-
-                .nav-container {
-                    li {
-                        font-family: 'Noto Serif Khitan Small Script', sans-serif;
-                        padding: 20px;
-                        font-size: 18px;
-                        text-decoration: none;
-
-                        a {
-                            color: #383838;
-                        }
-                    }
-                }
-            }
-        }
 
         .profile-container {
-            height: 70%;
+            height: 80%;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -89,11 +45,10 @@
             }
         }
 
-        .footer-container {
-            height: 10%;
-        }
-
     }
 
+    .footer-container {
+        height: 10%;
+    }
 
 }
