@@ -6,34 +6,44 @@
 }
 
 .main-container {
-    display: flex;
-    flex-direction: column;
-    padding: 0 60px;
+    background-color: #EAEAEA;
+
 
     .first-view-container {
         height: 100vh;
+        padding: 0 60px;
 
+        .welcome-container {
+            height: 100%;
 
-        .profile-container {
-            height: 90%;
-
-            .profile-inner {
+            .welcome-inner {
                 height: 100%;
-                display: grid;
+                display: flex;
+                flex-direction: column;
                 justify-content: center;
                 align-items: center;
+                gap: 10px;
+
+                .brand-container {
+                    img {
+                        width: 150px;
+                        height: 150px;
+                        border-radius: 100%;
+                    }
+                }
 
                 h1 {
                     display: flex;
                     justify-content: center;
                     align-items: center;
                     font-size: 5rem;
+                    font-family: 'Nunito', sans-serif;
                 }
 
                 P.text {
                     font-family: 'Nunito', sans-serif;
-                    font-size: 2rem;
-                    font-weight: 400;
+                    font-size: 23px;
+                    font-weight: bold;
 
 
                     a {
@@ -43,9 +53,9 @@
                 }
 
                 p.pre-title {
-                    font-family: 'Noto Serif Khitan Small Script', sans-serif;
-                    font-size: 30px;
-                    font-weight: 400;
+                    font-family: 'Nunito', sans-serif;
+                    font-size: 45px;
+                    font-weight: bold;
                     color: rgb(0, 0, 97);
                 }
 
@@ -101,6 +111,7 @@
                 }
 
                 .btn-data {
+                    text-align: center;
                     font-size: 5rem;
                     font-family: 'IBM Plex Sans', sans-serif;
                     position: relative;
@@ -146,8 +157,8 @@
     }
 
     footer {
-        background-color: var(--neutral-dark);
-        color: var(--neutral-white);
+        background-color: rgb(42, 42, 80);
+        color: #FFFFFF;
         text-align: center;
         padding: 1rem;
     }
