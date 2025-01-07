@@ -7,4 +7,4 @@ footerCSS.rel = 'stylesheet'
 footerCSS.href = '/components/Footer/footer.style.css'
 
 document.head.appendChild(footerCSS);
-document.getElementById('footer').innerHTML = navbarHTML;
+document.getElementById('footer').innerHTML = footerCSS;

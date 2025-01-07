@@ -7,4 +7,4 @@ navCSS.rel = 'stylesheet'
 navCSS.href = '/components/Navbar/navBar.style.css'
 
 document.head.appendChild(navCSS);
-document.getElementById('navBar').innerHTML = navbarHTML;
+document.getElementById('navBar').innerHTML = navCSS;
