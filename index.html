@@ -9,26 +9,34 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <!--CDN Fonts-->
     <link href="https://fonts.cdnfonts.com/css/nunito-2" rel="stylesheet">
-    <link href="https://fonts.cdnfonts.com/css/nrt-reg" rel="stylesheet">
     <link href="https://fonts.cdnfonts.com/css/noto-serif-khitan-small-script" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/nrt-reg" rel="stylesheet">
+    <!--Encabezados-->
+    <link href="https://fonts.cdnfonts.com/css/ibm-plex-sans" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/montserrat" rel="stylesheet">
     <!--CSS Link-->
-    <link rel="stylesheet" href="/css/index.style.css">
+    <link rel="stylesheet" href="/index.style.css">
     <title>Santiago Lanz</title>
 </head>
 
 <body>
     <div class="main-container">
-        <div class="first-view-container">
+        <section class="view welcome-view-container">
             <div id="navBar" class="navBar-container">
 
             </div>
-            <div class="profile-container">
-                <div class="profile-inner">
-                    <p class="pre-title">
-                        HOLA, MI NOMBRE ES SANTIAGO
-                    </p>
-                    <h1>Desarrollador front-end</h1>
-                    <h1>& Analista de datos Jr.</h1>
+            <div class="welcome-container">
+                <div class="welcome-inner">
+                    <div class="img-container">
+                        <span>
+                            <img src="https://unavatar.io/github/SagoDev" alt="">
+                        </span>
+                    </div>
+                    <p class="pre-title">Hola, soy Santiago</p>
+                    <h1><a class="btn-frontend" href="/pages/frontend/html/frontend.html">Desarrollador front-end</a>
+                    </h1>
+                    <h1>& <a class="btn-data" href="/pages/data/html/data.html">ANALISTA DE DATOS</a></h1>
+
                     <p class="text">
                         Formado bajo propuestas de estudios gestionadas por
                         <a href="https://ceibal.edu.uy" target="_blank" rel="noreferrer">Ceibal</a> y
@@ -36,18 +44,26 @@
                     </p>
                 </div>
             </div>
-        </div>
+        </section>
+        <section id="skills" class="view skills-view-container">
 
-        <div id="footer">
-            
-        </div>
-    </div>
+        </section>
+
+        <section id="me" class="me-view-container">
+
+        </section>
+
+        <section id="footer">
+
+        </section>
     </div>
     <!--Script Bootstrap-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <!--Components-->
-    <script src="/components/Navbar/navBar.js"></script>
     <script src="/components/Footer/footer.js"></script>
+    <script src="/components/Navbar/navBar.js"></script>
+    <script src="/sections/what_can_I_do/js/skills.js"></script>
+    <script src="/sections/who_am_I/js/me.js"></script>
 </body>
 
 </html>

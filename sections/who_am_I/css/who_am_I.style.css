@@ -1,0 +1,87 @@
+.intro-view {
+    height: 100%;
+    .intro-header {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .intro-img {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+
+        .intro-text {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+
+            .intro-title {
+                height: 20%;
+                text-align: center;
+
+                h1 {
+
+                    font-family: 'Noto Serif Khitan Small Script', sans-serif;
+                    font-weight: bolder;
+                    font-size: 3rem;
+                    color: #383838;
+                }
+            }
+
+            .intro-paraphs {
+                height: 80%;
+
+                p {
+                    font-family: 'Nunito', sans-serif;
+                    font-size: 1.5rem;
+                    text-align: justify;
+
+                    a {
+                        font-family: 'Noto Serif Khitan Small Script', sans-serif;
+                        color: rgb(92, 92, 255);
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+
+
+.life-view {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;   
+    gap: 3em;
+    text-align: center;
+    .study-container,
+    .work-container {
+        padding: 0 200px;
+        p {
+            font-family: 'Nunito', sans-serif;
+            font-weight: bolder;
+            font-size: 20px;
+            text-align: justify;
+
+            a {
+                font-family: 'Noto Serif Khitan Small Script', sans-serif;
+                color: rgb(92, 92, 255);
+            }
+        }
+
+        h1 {
+            font-family: 'Noto Serif Khitan Small Script', sans-serif;
+            font-size: 35px;
+            color: #383838;
+
+        }
+
+        .work-text {
+            padding: 15px;
+        }
+    }
+}

@@ -8,13 +8,19 @@
 .main-container {
     background-color: #EAEAEA;
 
-
-    .first-view-container {
+    .view {
         height: 100vh;
         padding: 0 60px;
+    }
+
+    .welcome-view-container {
+
+        .navBar {
+            height: 10%;
+        }
 
         .welcome-container {
-            height: 100%;
+            height: 90%;
 
             .welcome-inner {
                 height: 100%;
@@ -24,7 +30,8 @@
                 align-items: center;
                 gap: 10px;
 
-                .brand-container {
+                .img-container {
+
                     img {
                         width: 150px;
                         height: 150px;

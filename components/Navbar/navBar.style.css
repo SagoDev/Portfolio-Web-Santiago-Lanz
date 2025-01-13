@@ -1,27 +1,8 @@
 .header-inner {
     width: 100%;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    .brand-container {
-        img {
-            width: 55px;
-            height: 55px;
-            border-radius: 100%;
-            border: 4px solid rgb(255, 255, 255);
-        }
-
-        a {
-            font-family: 'Noto Serif Khitan Small Script', sans-serif;
-            font-weight: bold;
-            text-decoration: none;
-            font-size: 15px;
-            color: #000000;
-
-        }
-    }
-
+    justify-content: flex-end;
+    align-items: center; 
     .options-container {
         li {
             font-family: 'Noto Serif Khitan Small Script', sans-serif;
