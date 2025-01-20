@@ -5,23 +5,23 @@
         height: 100%;       
 
         .title-container {
-            height: 10%;
+            height: 20%;
             display: flex;
             justify-content: center;
             align-items: center;
-
+            padding: 20px;
 
             h1 {
                 font-family: 'Noto Serif Khitan Small Script', sans-serif;
                 font-weight: bolder;
-                font-size: 3rem;
+                font-size: 5rem;
                 color: #383838;
             }
 
         }
 
         .areas-container {
-            height: 90%;
+            height: 80%;
             display: flex;
             justify-content: center;
             align-items: center;
