@@ -25,8 +25,7 @@
                 <div class="options-container col-6">
                     <ul class="nav nav-underline nav-fill">
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#about"><span
-                                    class="especial">&lt;</span>SOBRE
+                            <a class="nav-link" href="#about"><span class="especial">&lt;</span>SOBRE
                                 MI<span class="especial">&gt;</span></a>
                         </li>
                         <li class="nav-item">
@@ -40,17 +39,28 @@
                     </ul>
                 </div>
             </div>
-            <div class="welcome-content row">
+            <div id="welcome" class="welcome-content row">
                 <div class="text-container col-6">
-                    <div class="paraph paraph-one">
-                        <h5 id="p1"></h5>
-
+                    <div class="text text-one">
+                        <h5 id="t1"></h5>
                     </div>
-                    <div class="paraph paraph-two">
-                        <h5 id="p2"></h5>
+                    <div class="text text-two">
+                        <h5 id="t2"></h5>
                     </div>
                 </div>
                 <div class="img-container col-6">
+                </div>
+                <div class="text-three">
+                    <div class="line-one">
+                        <h1>DESARROLLADOR</h1>
+                    </div>
+                    <div class="line-two">
+                        <h1>FRONT-END</h1>
+                    </div>
+                    <div class="line-three">
+                        <h4>Apasionado por la creación de sitios web e interfaces que aporten al desarrollo de personas
+                            y empresas.</h4>
+                    </div>
                 </div>
             </div>
         </section>
@@ -74,12 +84,12 @@
     <!--Script Bootstrap-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script>
-        document.getElementById('p1').textContent = `
+        document.getElementById('t1').textContent = `
         const welcomeCSS = document.createElement('link')
         welcomeCSS.rel = 'stylesheet'
         welcomeCSS.href = '/sections/welcome/css/welcome.style.css'
          `;
-        document.getElementById('p2').textContent = ` 
+        document.getElementById('t2').textContent = ` 
         <p class="text">
             Formado bajo propuestas de estudios gestionadas por 
             <a target="_blank" rel="noreferrer">Ceibal</a> y 
