@@ -24,7 +24,7 @@
             <a href="https://github.com/SagoDev" target="_blank" rel="noreferrer"><i class="bi bi-github"></i></a>
         </div>
         <div class="sections-container">
-            <section id="welcome" class=" view welcome-container">
+            <section id="welcome" class="view welcome-container">
                 <div id="navBar" class="navBar-container row">
                     <div class="brand-container col-6">
                         <span class="name">SANTIAGO</span> LANZ
@@ -32,16 +32,16 @@
                     <div class="options-container col-6">
                         <ul class="nav nav-underline nav-fill">
                             <li class="nav-item">
-                                <a class="nav-link" href="#about"><span class="especial">&lt;</span>SOBRE
-                                    MI<span class="especial">&gt;</span></a>
+                                <a class="nav-link" href="#about"><span class="turquoise">&lt;</span>SOBRE
+                                    MI<span class="turquoise">&gt;</span></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#skills"> <span class="especial">&lt;</span>HABILIDADES<span
-                                        class="especial">&gt;</span></a>
+                                <a class="nav-link" href="#skills"> <span class="turquoise">&lt;</span>HABILIDADES<span
+                                        class="turquoise">&gt;</span></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#contact"><span class="especial">&lt;</span>CONTACTAME<span
-                                        class="especial">&gt;</span> </a>
+                                <a class="nav-link" href="#contact"><span class="turquoise">&lt;</span>CONTACTAME<span
+                                        class="turquoise">&gt;</span> </a>
                             </li>
                         </ul>
                     </div>
@@ -58,7 +58,7 @@
                     <div class="img-container col-5">
                     </div>
                     <div class="text-three row">
-                        <div class="lines col-8">
+                        <div class="lines col-9">
                             <div class="line-one">
                                 <h1>DESARROLLADOR</h1>
                             </div>
@@ -71,22 +71,43 @@
                                     y empresas.</h4>
                             </div>
                         </div>
-                        <div class="empty-box col-4">
+                        <div class="empty-box col-3">
 
                         </div>
                     </div>
                 </div>
             </section>
-
-            <section id="about" class="about-view-container">
+            <div class="divider"></div>
+            <section id="about" class="view about-container">
+                <div class="about-title">
+                    <h2>Sobre Mi</h2>
+                </div>
+                <div class="imgText-container row">
+                    <div class="about-img col-4"></div>
+                    <div class="about-text row col-8">
+                        <div class="text-p col-7">
+                            <p><span class="turquoise">&lt;</span>Soy desarrollador front-end con práctica en crear
+                                interfaces web modernas y
+                                funcionales, utilizando <span class="turquoise">HTML</span>, <span
+                                    class="turquoise">CSS</span>, <span class="turquoise">JavaScript</span>, <span
+                                    class="turquoise">React</span>, <span class="turquoise">Angular</span>. Durante más
+                                de 2 años, he
+                                trabajado en proyectos prácticos enfocados en la experiencia del usuario y la
+                                escalabilidad.</p>
+                            <p>Me he formado en instituciones como <a class="turquoise" href="https://ceibal.edu.uy/institucional/que-es-ceibal/" target="_blank" rel="noreferrer">Ceibal</a> y <a class="turquoise" href="https://www.guayerd.com/es/" target="_blank" rel="noreferrer">Guayerd</a>, donde adquirí habilidades técnicas
+                                sólidas y experiencia colaborativa en equipos de desarrollo.</p>
+                            <p>Mi objetivo es diseñar soluciones web eficientes y atractivas, combinando creatividad y
+                                tecnología para aportar valor a las personas y las empresas.<span
+                                    class="turquoise">&gt;</span></p>
+                        </div>
+                        <div class="empty-box col-5"></div>
+                    </div>
+                </div>
+            </section>
+            <section id="skills" class="skills-container">
 
             </section>
-
-            <section id="skills" class="skills-view-container">
-
-            </section>
-
-            <section id="contact" class="contact-view-container">
+            <section id="contact" class="contact-container">
 
             </section>
         </div>
@@ -96,6 +117,7 @@
     </div>
     <!--Script Bootstrap-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!--Script Textos de fondo-->
     <script>
         document.getElementById('t1').textContent = `
         const welcomeCSS = document.createElement('link')

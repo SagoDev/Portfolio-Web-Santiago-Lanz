@@ -10,6 +10,7 @@
 
 body {
     background-color: var(--black-color);
+    color: var(--white-color);
 }
 
 H3,
@@ -23,7 +24,12 @@ H2 {
 }
 
 .main-container {
-    display: flex;
+    position: relative;
+
+    .divider {
+        height: 200px;
+        width: 100%;
+    }
 
     .view {
         height: 100vh;
@@ -33,32 +39,35 @@ H2 {
         height: 100%;
     }
 
-    .white-line{
+    .white-line {
         height: 170px;
         width: 2px;
-        background-color:var(--white-color);
+        background-color: var(--white-color);
 
     }
 
+    .turquoise {
+        color: var(--turquoise-color);
+    }
 
     .social-media {
-        width: 10%;
+        position: absolute;
         display: flex;
         justify-content: flex-start;
         align-items: center;
         flex-direction: column;
         gap: 20px;
         font-size: 2rem;
-        a{
+
+        a {
             color: var(--white-color);
         }
     }
 
     .sections-container {
-        width: 90%;
-
         .welcome-container {
             width: 100%;
+            padding-left: 100px;
 
             .navBar-container {
                 width: 100%;
@@ -84,10 +93,6 @@ H2 {
 
                     a {
                         color: var(--white-color);
-                    }
-
-                    .especial {
-                        color: var(--turquoise-color);
                     }
                 }
             }
@@ -133,7 +138,7 @@ H2 {
                             justify-content: start;
                             text-align: start;
                             color: var(--turquoise-color);
-                            
+
                         }
                     }
                 }
@@ -161,9 +166,38 @@ H2 {
                         }
 
                         .line-three {
-                            text-align: justify;
+                            text-align: end;
+                            padding-right: 90px;
                         }
                     }
+                }
+            }
+        }
+
+        .about-container {
+            padding-top: 50px;           
+            width: 100%;
+
+            .about-title {
+                text-align: center;
+
+                h2 {
+                    font-size: 3rem;
+                }
+            }
+
+            .imgText-container {
+                width: 100%;
+                margin-top: 50px;
+
+                about-img {}
+
+                .about-text {
+                    text-align: justify;
+                    font-size: 23px;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
                 }
             }
         }
