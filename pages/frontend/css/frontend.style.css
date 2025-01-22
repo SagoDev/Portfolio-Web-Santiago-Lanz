@@ -23,6 +23,8 @@ H2 {
 }
 
 .main-container {
+    display: flex;
+
     .view {
         height: 100vh;
     }
@@ -31,108 +33,136 @@ H2 {
         height: 100%;
     }
 
-    .welcome-container {
+    .white-line{
+        height: 170px;
+        width: 2px;
+        background-color:var(--white-color);
 
-        .navBar-container {
-            width: 100%;
-            height: 10%;
+    }
 
+
+    .social-media {
+        width: 10%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+        font-size: 2rem;
+        a{
             color: var(--white-color);
-
-            .brand-container {
-                display: flex;
-                justify-content: start;
-                align-items: center;
-                text-align: center;
-                font-size: 35px;
-
-                .name {
-                    font-weight: 600;
-                }
-            }
-
-            .options-container {
-                font-weight: 500;
-                font-size: 20px;
-
-                a {
-                    color: var(--white-color);
-                }
-
-                .especial {
-                    color: var(--turquoise-color);
-                }
-            }
         }
+    }
 
-        .welcome-content {
-            position: relative;
-            height: 90%;
+    .sections-container {
+        width: 90%;
+
+        .welcome-container {
             width: 100%;
 
-            .img-container {
-                background-image: url('/img/background-welcome-img.webp');
-                background-size: cover;
-                background-position: center;
-                background-repeat: no-repeat;
-                border-color: none;
-                box-shadow:
-                    inset 0 0 250px rgb(8, 8, 8),
-                    inset 0 0 500px rgba(22, 22, 22, 0.8),
-                    inset 0 0 700px rgba(22, 22, 22, 0.6),
-                    0 0 50px rgba(22, 22, 22, 0.1);
-            }
-
-            .text-container {
-                
-                display: flex;
-                align-items: start;
-                justify-content: space-between;
-                flex-direction: column;
-
-                .text {
-                    white-space: pre-wrap;
-
-                    &.text-one {
-                        display: flex;
-                        align-items: start;
-                        justify-content: end;
-                    }
-
-                    &.text-two {
-                        display: flex;
-                        align-items: end;
-                        justify-content: start;
-                        text-align: start;
-                    }
-                }
-            }
-
-            .text-three {
+            .navBar-container {
                 width: 100%;
-                height: 100%;
-                position: absolute;
-                z-index: 1;
+                height: 10%;
+
                 color: var(--white-color);
 
-                h1 {
-                    font-size: 4.5rem;
-                    font-weight: 600;
+                .brand-container {
+                    display: flex;
+                    justify-content: start;
+                    align-items: center;
+                    text-align: center;
+                    font-size: 35px;
+
+                    .name {
+                        font-weight: 600;
+                    }
                 }
 
-                .lines {
-                    display: flex;
-                    justify-content: center;
-                    flex-direction: column;
-                    padding-left: 100px;
-                   
-                    .line-two {
-                        align-self: flex-end;
-                        color: var(--turquoise-color);
+                .options-container {
+                    font-weight: 500;
+                    font-size: 20px;
+
+                    a {
+                        color: var(--white-color);
                     }
 
-                    .line-three {
-                        text-align: justify;
+                    .especial {
+                        color: var(--turquoise-color);
+                    }
+                }
+            }
+
+            .welcome-content {
+                position: relative;
+                height: 90%;
+                width: 100%;
+
+                .img-container {
+                    background-image: url('/img/background-welcome-img.webp');
+                    background-size: cover;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    border-color: none;
+                    box-shadow:
+                        inset 0 0 250px rgb(8, 8, 8),
+                        inset 0 0 500px rgba(22, 22, 22, 0.8),
+                        inset 0 0 700px rgba(22, 22, 22, 0.6),
+                        0 0 50px rgba(22, 22, 22, 0.1);
+                }
+
+                .text-container {
+                    display: flex;
+                    align-items: start;
+                    justify-content: space-between;
+                    flex-direction: column;
+
+                    .bg-text {
+                        white-space: pre-wrap;
+                        opacity: 0.2;
+
+                        &.text-one {
+                            display: flex;
+                            align-items: start;
+                            justify-content: end;
+                            color: var(--white-color);
+                        }
+
+                        &.text-two {
+                            display: flex;
+                            align-items: end;
+                            justify-content: start;
+                            text-align: start;
+                            color: var(--turquoise-color);
+                            
+                        }
+                    }
+                }
+
+                .text-three {
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    z-index: 1;
+                    color: var(--white-color);
+
+                    h1 {
+                        font-size: 4.5rem;
+                        font-weight: 600;
+                    }
+
+                    .lines {
+                        display: flex;
+                        justify-content: center;
+                        flex-direction: column;
+
+                        .line-two {
+                            align-self: flex-end;
+                            color: var(--turquoise-color);
+                        }
+
+                        .line-three {
+                            text-align: justify;
+                        }
                     }
                 }
             }
