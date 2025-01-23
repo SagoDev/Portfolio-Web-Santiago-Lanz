@@ -83,7 +83,13 @@
                     <h2>Sobre Mi</h2>
                 </div>
                 <div class="imgText-container row">
-                    <div class="about-img col-4"></div>
+                    <div class="about-img col-4">
+                        <div class="img">
+                            <span>
+                                <img src="" alt="">
+                            </span>
+                        </div>
+                    </div>
                     <div class="about-text row col-8">
                         <div class="text-p col-7">
                             <p><span class="turquoise">&lt;</span>Soy desarrollador front-end con práctica en crear
@@ -94,13 +100,19 @@
                                 de 2 años, he
                                 trabajado en proyectos prácticos enfocados en la experiencia del usuario y la
                                 escalabilidad.</p>
-                            <p>Me he formado en instituciones como <a class="turquoise" href="https://ceibal.edu.uy/institucional/que-es-ceibal/" target="_blank" rel="noreferrer">Ceibal</a> y <a class="turquoise" href="https://www.guayerd.com/es/" target="_blank" rel="noreferrer">Guayerd</a>, donde adquirí habilidades técnicas
+                            <p>Me he formado en instituciones como <a class="turquoise"
+                                    href="https://ceibal.edu.uy/institucional/que-es-ceibal/" target="_blank"
+                                    rel="noreferrer">Ceibal</a> y <a class="turquoise"
+                                    href="https://www.guayerd.com/es/" target="_blank" rel="noreferrer">Guayerd</a>,
+                                donde adquirí habilidades técnicas
                                 sólidas y experiencia colaborativa en equipos de desarrollo.</p>
                             <p>Mi objetivo es diseñar soluciones web eficientes y atractivas, combinando creatividad y
                                 tecnología para aportar valor a las personas y las empresas.<span
                                     class="turquoise">&gt;</span></p>
                         </div>
-                        <div class="empty-box col-5"></div>
+                        <div class="empty-box bg-text col-5">
+                            <h5 id="t3"></h5>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -129,7 +141,15 @@
             Formado bajo propuestas de estudios gestionadas por 
             <a target="_blank" rel="noreferrer">Ceibal</a> y 
             <a target="_blank" rel="noreferrer">Guayerd</a>
-        </p>`;    
+        </p>`;
+        document.getElementById('t3').textContent = ` 
+        .brand-container {
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            text-align: center;
+            font-size: 35px;
+        }`;    
     </script>
 </body>
 
