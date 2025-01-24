@@ -214,10 +214,50 @@ H2 {
 
                 .about-text {
                     font-size: 23px;
-                    .dots{
+
+                    .dots {
                         display: flex;
                         justify-content: center;
                         align-items: center;
+                    }
+                }
+            }
+        }
+
+        .skills-container {
+            width: 100%;
+            padding-top: 50px;
+
+            .skills-title {
+                text-align: center;
+
+                h2 {
+                    font-size: 3rem;
+                }
+            }
+
+            .skills-cards {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                gap: 50px;
+                padding: 50px;
+
+                .card {    
+                    width: 200px;
+                    height: 200px;
+                    background-color: #161616;
+                    border: 1px solid #161616;
+                    border-radius: 8px;
+                    box-shadow: 0 4px 6px #161616;
+                    padding: 16px;
+                    text-align: center;
+                    color: var(--white-color);
+                    
+                    .card-body{
+                        display: flex;
+                        justify-content: space-around;
+                        align-items: center;
+                        flex-direction: column;
                     }
                 }
             }
