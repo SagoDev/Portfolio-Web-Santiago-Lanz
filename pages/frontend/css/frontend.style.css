@@ -213,7 +213,12 @@ H2 {
                 }
 
                 .about-text {
-                    font-size: 23px;    
+                    font-size: 23px;
+                    .dots{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
                 }
             }
         }
