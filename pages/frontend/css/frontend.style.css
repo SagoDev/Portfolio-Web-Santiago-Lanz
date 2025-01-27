@@ -226,39 +226,70 @@ H2 {
 
         .skills-container {
             width: 100%;
-            padding-top: 50px;
+            padding: 100px;
 
-            .skills-title {
-                text-align: center;
-
-                h2 {
-                    font-size: 3rem;
-                }
-            }
-
-            .skills-cards {
+            .cards-box {
                 display: grid;
                 grid-template-columns: repeat(4, 1fr);
                 gap: 50px;
-                padding: 50px;
 
-                .card {    
-                    width: 200px;
-                    height: 200px;
+                .card {
+                    height: 250px;
+                    width: auto;
                     background-color: #161616;
                     border: 1px solid #161616;
                     border-radius: 8px;
                     box-shadow: 0 4px 6px #161616;
-                    padding: 16px;
                     text-align: center;
-                    color: var(--white-color);
-                    
-                    .card-body{
+                    color: var(--turquoise-color);
+
+                    .card-body {
                         display: flex;
                         justify-content: space-around;
                         align-items: center;
                         flex-direction: column;
                     }
+
+                    .side {
+                        position: relative;
+                        transition: 1s;
+                        backface-visibility: hidden;
+                    }
+
+                    .frontside {
+                        position: absolute;
+                        transform: perspective(600px) rotateY(0deg);
+                    }
+
+                    .backside {
+                        padding: 20px;
+                        text-align: start;
+                        color: var(--turquoise-color);
+                        position: absolute;
+                        transform: perspective(600px) rotateY(180deg);
+                    }
+
+                    &:hover .frontside {
+                        transform: perspective(600px) rotateY(180deg);
+                    }
+
+                    &:hover .backside {
+                        transform: perspective(600px) rotateY(360deg);
+                    }
+                }
+            }
+
+
+            .skills {
+                width: 100%;
+
+                .title {
+                    text-align: center;
+                    padding-bottom: 50px;
+                }
+
+                .rubrica-jap{
+                    margin-top: 20px;
                 }
             }
         }
