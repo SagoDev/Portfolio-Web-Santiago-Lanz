@@ -262,11 +262,10 @@ H2 {
                     }
 
                     .backside {
-                        padding: 20px;
-                        text-align: start;
                         color: var(--turquoise-color);
                         position: absolute;
                         transform: perspective(600px) rotateY(180deg);
+                        padding: 20px;
                     }
 
                     &:hover .frontside {
@@ -277,20 +276,40 @@ H2 {
                         transform: perspective(600px) rotateY(360deg);
                     }
                 }
-            }
 
+                .text-box {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                }
+
+            }
 
             .skills {
                 width: 100%;
 
                 .title {
                     text-align: center;
-                    padding-bottom: 50px;
+                    padding: 30px;
                 }
 
-                .rubrica-jap{
-                    margin-top: 20px;
+                .rubrica-jap {
+                    margin-top: 25px;
+                    text-align: center;
                 }
+            }
+        }
+        .projects-container {
+            width: 100%;            
+
+            .projects {
+                width: 100%;
+
+                .title {
+                    text-align: center;
+                    padding: 30px;
+                }                
             }
         }
     }
