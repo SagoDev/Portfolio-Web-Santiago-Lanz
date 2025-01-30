@@ -78,6 +78,19 @@ section {
     }
 }
 
+@keyframes fill-text {
+
+    10%,
+    100% {
+        width: 0;
+    }
+
+    70%,
+    90% {
+        width: 100%;
+    }
+}
+
 .home {
     display: flex;
     align-items: center;
@@ -199,19 +212,6 @@ section {
             }
         }
     }
-
-    @keyframes fill-text {
-
-        10%,
-        100% {
-            width: 0;
-        }
-
-        70%,
-        90% {
-            width: 100%;
-        }
-    }
 }
 
 .resume {
@@ -242,7 +242,7 @@ section {
             }
 
             .desc {
-                margin: 2rem 0 2.5rem;                
+                margin: 2rem 0 2.5rem;
             }
 
             .resume-btn {
@@ -312,64 +312,62 @@ section {
                     }
                 }
             }
+
+            .skills {
+                .desc span {
+                    color: var(--main-color);
+                }
+
+                .skills-list {
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+                    gap: 2rem;
+                    height: auto;
+                    overflow: visible;
+                    padding: 1rem;
+
+                    .skill-item {
+                        display: flex;
+                        position: relative;
+                        flex-direction: column;
+                        align-items: center;
+                        height: auto;
+                        border-radius: .8rem;
+                        padding: 1rem;
+                        background-color: var(--grey-color);
+                        color: var(--dark-color);
+
+                        i {
+                            font-size: 8.5rem;
+                            transition: .5s;
+                        }
+
+                        &:hover {
+                            color: var(--main-color);
+                        }
+
+                        span {
+                            position: absolute;
+                            top: -20%;
+                            background-color: var(--bg-color);
+                            color: var(--dark-color);
+                            font-size: 1.6rem;
+                            padding: .5rem 1rem;
+                            border-radius: .6rem;
+                            pointer-events: none;
+                            opacity: 0;
+                            transform: scale(.9);
+                            transition: .2s;
+                        }
+
+                        &:hover span {
+                            top: -25%;
+                            opacity: 1;
+                            transform: scale(1);
+                        }
+                    }
+                }
+            }
         }
     }
 }
-
-.skills {
-    .desc span {
-        color: var(--main-color);
-    }
-
-    .skills-list {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-        gap: 2rem;
-        height: auto;
-        overflow: visible;
-        padding: 1rem;
-
-        .skill-item {
-            display: flex;
-            position: relative;
-            flex-direction: column;
-            align-items: center;
-            height: auto;
-            border-radius: .8rem;
-            padding: 1rem;
-            background-color: var(--grey-color);
-            color: var(--dark-color);
-
-            i {
-                font-size: 8.5rem;
-                transition: .5s;
-            }
-
-            &:hover {
-                color: var(--main-color);
-            }
-
-            span {
-                position: absolute;
-                top: -20%;
-                background-color: var(--bg-color);
-                color: var(--dark-color);
-                font-size: 1.6rem;
-                padding: .5rem 1rem;
-                border-radius: .6rem;
-                pointer-events: none;
-                opacity: 0;
-                transform: scale(.9);
-                transition: .2s;
-            }
-
-            &:hover span {
-                top: -25%;
-                opacity: 1;
-                transform: scale(1);
-            }
-        }
-    }
-}
-
-.aboutMe {}
