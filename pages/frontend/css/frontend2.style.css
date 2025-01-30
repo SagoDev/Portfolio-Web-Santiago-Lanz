@@ -11,11 +11,12 @@
 }
 
 :root {
-    --white-color: #1f232d;
+    --dark-color: #1f232d;
     --bg-second-color: #323946;
     --main-color: #4794b3;
     --bg-color: #d4d4d4;
     --disabled-color: #fff3;
+    --grey-color: rgba(59, 59, 59, 0.212);
 }
 
 html {
@@ -23,7 +24,7 @@ html {
 }
 
 body {
-    color: var(--white-color);
+    color: var(--dark-color);
     background: var(--bg-color);
 }
 
@@ -46,13 +47,13 @@ header {
 
     .logo {
         font-size: 3rem;
-        color: var(--white-color);
+        color: var(--dark-color);
         font-weight: 700;
     }
 
     nav a {
         font-size: 2rem;
-        color: var(--white-color);
+        color: var(--dark-color);
         font-weight: 500;
         margin-left: 3.5rem;
         transition: .5s;
@@ -198,6 +199,19 @@ section {
             }
         }
     }
+
+    @keyframes fill-text {
+
+        10%,
+        100% {
+            width: 0;
+        }
+
+        70%,
+        90% {
+            width: 100%;
+        }
+    }
 }
 
 .about {
@@ -270,14 +284,14 @@ section {
                     padding: 1rem;
 
                     .about-item {
-                        background-color: var(--bg-second-color);
+                        background-color: var(--grey-color);
                         border-radius: .8rem;
                         padding: 3rem 2.5rem;
                         height: calc((35rem/2rem)/2);
                         display: flex;
                         flex-direction: column;
                         justify-content: center;
-                        color: var(--bg-color);
+                        color: var(--dark-color);
 
                         .img-box {
                             width: 100%;
@@ -303,15 +317,54 @@ section {
     }
 }
 
-@keyframes fill-text {
+.skills {
+    .skills-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+        gap: 2rem;
+        height: auto;
+        overflow: visible;
+        padding: 1rem;
 
-    10%,
-    100% {
-        width: 0;
-    }
+        .skill-item {
+            display: flex;
+            position: relative;
+            flex-direction: column;
+            align-items: center;
+            height: auto;
+            border-radius: .8rem;
+            padding: 1rem;
+            background-color: var(--grey-color);
+            color: var(--dark-color);
 
-    70%,
-    90% {
-        width: 100%;
+            i {
+                font-size: 8.5rem;
+                transition: .5s;
+            }
+
+            &:hover {
+                color: var(--main-color);
+            }
+
+            span {
+                position: absolute;
+                top: -20%;
+                background-color: var(--bg-color);
+                color: var(--dark-color);
+                font-size: 1.6rem;
+                padding: .5rem 1rem;
+                border-radius: .6rem;
+                pointer-events: none;
+                opacity: 0;
+                transform: scale(.9);
+                transition: .2s;
+            }
+
+            &:hover span{
+                top: -25%;
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
     }
 }
