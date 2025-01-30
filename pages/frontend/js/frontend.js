@@ -1,17 +1,17 @@
-const aboutBtns = document.querySelectorAll('.about-btn');
+const resumeBtns = document.querySelectorAll('.resume-btn');
 
-aboutBtns.forEach((btn, idx) => {
+resumeBtns.forEach((btn, idx) => {
     btn.addEventListener('click', () => {
-        const aboutDetails = document.querySelectorAll('.about-detail')
+        const resumeDetails = document.querySelectorAll('.resume-detail')
 
-        aboutBtns.forEach(btn => {
+        resumeBtns.forEach(btn => {
             btn.classList.remove('active');
         });
         btn.classList.add('active');
 
-        aboutDetails.forEach(detail => {
+        resumeDetails.forEach(detail => {
             detail.classList.remove('active');
         });
-        aboutDetails[idx].classList.add('active');
+        resumeDetails[idx].classList.add('active');
     });
 });
