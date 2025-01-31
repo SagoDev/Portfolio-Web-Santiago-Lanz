@@ -16,35 +16,24 @@ resumeBtns.forEach((btn, idx) => {
     });
 });
 
-const arrowRight = document.querySelector('.arrow-right');
-const arrowLeft = document.querySelector('.arrow-left');
 
-let index = 0;
+const prevBtn = document.getElementById('prevBtn');
+const nextBtn = document.getElementById('nextBtn');
 
-const activeProject = () => {
-    const imgSlide = document.querySelector('.img-slide');
 
-    imgSlide.style.transform = `translateX(calc(${index * -100}%-${index * 2}rem))`;
-}
 
-arrowRight.addEventListener('click', () => {
-    if (index < 4) {
-        index++;
-    }
-    else {
-        index = 5;
-    }
+nextBtn.addEventListener('click', () => {
+    let firstCarousel = new bootstrap.Carousel(document.getElementById('first-carousel'));
+    let secondCarousel = new bootstrap.Carousel(document.getElementById('second-carousel'));
 
-    activeProject();
+    firstCarousel.next();
+    secondCarousel.next();
 });
 
-arrowLeft.addEventListener('click', () => {
-    if (index > 1) {
-        index--;
-    }
-    else {
-        index = 0;
-    }
+prevBtn.addEventListener('click', () => {
+    let firstCarousel = new bootstrap.Carousel(document.getElementById('first-carousel'));
+    let secondCarousel = new bootstrap.Carousel(document.getElementById('second-carousel'));
 
-    activeProject();
+    firstCarousel.prev();
+    secondCarousel.prev();
 });
