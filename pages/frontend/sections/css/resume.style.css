@@ -1,0 +1,161 @@
+.resume {
+    .resume-container {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 5rem;
+
+        .heading {
+            span {
+                color: var(--main-color);
+            }
+        }
+
+        .resume-box {
+            h2 {
+                font-size: 4rem;
+                text-align: center;
+            }
+
+            p {
+                font-size: 1.5rem;
+            }
+
+            a {
+                color: var(--main-color);
+                text-decoration: underline;
+            }
+
+            .desc {
+                margin: 2rem 0 2.5rem;
+            }
+
+            .resume-btn {
+                width: 100%;
+                height: 5.3rem;
+                background: var(--bg-second-color);
+                border: .2rem solid var(--bg-second-color);
+                font-size: 1.6rem;
+                color: var(--bg-color);
+                font-weight: 500;
+                margin-bottom: 2rem;
+                border-radius: .8rem;
+                cursor: pointer;
+
+                &.active {
+                    border-color: var(--main-color);
+                    color: var(--main-color);
+                }
+            }
+
+            .resume-detail {
+                display: none;
+
+                &.active {
+                    display: block;
+                }
+
+                .heading {
+                    text-align: start;
+                }
+
+                .resume-list {
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+                    gap: 2rem;
+                    height: 35rem;
+                    overflow: auto;
+                    padding: 1rem;
+
+                    .resume-item {
+                        background-color: var(--grey-color);
+                        border-radius: .8rem;
+                        padding: 3rem 2.5rem;
+                        height: calc((35rem/2rem)/2);
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        color: var(--dark-color);
+
+                        h3 {
+                            font-size: 1.6rem;
+                        }
+
+                        .img-box {
+                            width: 100%;
+                            height: 100%;
+
+                            a {
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                            }
+
+                            img {
+                                display: block;
+                                width: 75%;
+                                height: 100%;
+                                object-fit: cover;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .skills {
+                .desc span {
+                    color: var(--main-color);
+                }
+
+                .skills-list {
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+                    gap: 2rem;
+                    height: auto;
+                    overflow: visible;
+                    padding: 1rem;
+
+                    .skill-item {
+                        display: flex;
+                        position: relative;
+                        flex-direction: column;
+                        align-items: center;
+                        height: auto;
+                        border-radius: .8rem;
+                        padding: 1rem;
+                        background-color: var(--grey-color);
+                        color: var(--dark-color);
+
+                        i {
+                            font-size: 8.5rem;
+                            transition: .5s;
+                        }
+
+                        &:hover {
+                            color: var(--main-color);
+                        }
+
+                        span {
+                            position: absolute;
+                            top: -20%;
+                            background-color: var(--bg-color);
+                            color: var(--dark-color);
+                            font-size: 1.6rem;
+                            padding: .5rem 1rem;
+                            border-radius: .6rem;
+                            pointer-events: none;
+                            opacity: 0;
+                            transform: scale(.9);
+                            transition: .2s;
+                        }
+
+                        &:hover span {
+                            top: -25%;
+                            opacity: 1;
+                            transform: scale(1);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
