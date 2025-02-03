@@ -4,14 +4,27 @@ document.addEventListener('DOMContentLoaded', async () => {
     await loadSection(defaultSection);
 });
 
-document.querySelectorAll('header nav a').forEach(link => {
+let links = document.querySelectorAll('header nav a');
+
+links.forEach(link => {
+
     link.addEventListener('click', async (e) => {
         e.preventDefault();
         const section = e.target.dataset.section;
+        cleanClassLink();
+        link.classList.add('active');
+
         await loadSection(section);
     });
 });
 
+function cleanClassLink() {
+    links.forEach(link => {
+        link.className = '';
+    });
+}
+
+//Carga Dinámica de Sección
 async function loadSection(section) {
     const sectionBox = document.getElementById('section-box');
 
@@ -21,7 +34,7 @@ async function loadSection(section) {
     sectionBox.innerHTML = html;
 
     // Cargar CSS
-    let sectionCSS = document.querySelector(`link[data-section="section-link"]`);   
+    let sectionCSS = document.querySelector(`link[data-section="section-link"]`);
     sectionCSS.href = `./sections/css/${section}.style.css`;
 
     // Cargar JS
