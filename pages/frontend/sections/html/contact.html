@@ -6,11 +6,24 @@
     <div class="contact-box">
         <form action="">
             <div class="input-box">
+                <div class="input-field">
+                    <input type="text" placeholder="Nombre Completo" id="name" class="item" autocomplete="off">
+                    <label class="error-text" for="name">El nombre no puede estar en blanco.</label>
+                </div>
+                <div class="input-field">
+                    <input type="email" placeholder="Correo Electrónico" id="email" class="item" autocomplete="off">
+                    <label class="error-text" for="email">Ingresa un email válido.</label>
+                    
+                </div>
+                <div class="input-field">
+                    <input type="text" placeholder="Asunto" id="subject" class="item" autocomplete="off">
+                    <label class="error-text" for="subject">Sin Asunto.</label>                    
+                </div>
+                <div class="input-field">
+                    <textarea name="" id="message" cols="30" rows="10" placeholder="Escribe tu mensaje"></textarea>
+                    <label class="error-text" for="message">Tu mensaje está vacio.</label>
 
-                <input type="text" placeholder="Nombre Completo" id="name" class="item" autocomplete="off">
-                <input type="email" placeholder="Correo Electrónico" id="email" class="item" autocomplete="off">
-                <input type="text" placeholder="Asunto" id="subject" class="item" autocomplete="off">
-                <textarea name="" id="message" cols="30" rows="10" placeholder="Escribe tu mensaje"></textarea>
+                </div>
             </div>
             <button class="btn" type="submit">Enviar</button>
         </form>

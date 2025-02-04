@@ -31,7 +31,7 @@
 
             form {
                 background: var(--bg-second-color);
-                padding: 2.5rem 3.5rem 3.5rem;
+                padding: 2.5rem 3.5rem 2.5rem;
                 border-radius: 1rem;
                 text-align: center;
 
@@ -40,30 +40,43 @@
                     grid-template-columns: repeat(1, 1fr);
                     gap: 2rem;
 
-                    input,
-                    textarea {
-                        padding: 1.5rem;
-                        background: var(--dark-color);
-                        border: .15rem solid var(--disabled-color);
-                        border-radius: .6rem;
-                        font-size: 1.6rem;
-                        color: var(--bg-color);
+                    .input-field {
+                        
+                        input,
+                        textarea {
+                            width: 100%;
+                            padding: 1.5rem;
+                            background: var(--dark-color);
+                            border: .15rem solid var(--disabled-color);
+                            border-radius: .6rem;
+                            font-size: 1.6rem;
+                            color: var(--bg-color);
 
-                        &:focus {
-                            border-color: var(--main-color);
+                            &:focus {
+                                border-color: var(--main-color);
+                            }
+
                         }
 
-                    }
+                        textarea {
+                            grid-column: 1/-1;
+                            height: 10rem;
+                            resize: none;
+                        }
 
-                    textarea {
-                        grid-column: 1/-1;
-                        height: 10rem;
-                        resize: none;
+                        label {
+                            display: none;
+                            width: 100%;
+                            color: #d93025;
+                            font-size: 14.5px;
+                            text-align: left;
+                            margin: -5px 0 10px;
+                        }
                     }
                 }
 
                 .btn {
-                    margin-top: 2rem;
+                    margin-top: 1rem;
                     display: inline-block;
                     padding: 1rem 3rem;
                     background: var(--main-color);
