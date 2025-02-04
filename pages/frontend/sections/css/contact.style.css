@@ -41,7 +41,7 @@
                     gap: 2rem;
 
                     .input-field {
-                        
+
                         input,
                         textarea {
                             width: 100%;
@@ -72,6 +72,17 @@
                             text-align: left;
                             margin: -5px 0 10px;
                         }
+
+                        &.error {
+                            .item {
+                                border-color: #d93025;
+                            }
+
+                            .error-text {
+                                display: block;
+                            }
+                        }
+
                     }
                 }
 
