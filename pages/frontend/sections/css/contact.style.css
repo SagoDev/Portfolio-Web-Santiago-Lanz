@@ -1,4 +1,5 @@
-.contact {
+.contact {    
+
     .contact-container {
         display: grid;
         grid-template-columns: 1fr 1.3fr;

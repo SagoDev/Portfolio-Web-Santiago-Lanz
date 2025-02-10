@@ -1,6 +1,4 @@
-.home {
-    display: flex;
-    align-items: center;
+.home {    
     gap: 5rem;
 
     .home-detail {
