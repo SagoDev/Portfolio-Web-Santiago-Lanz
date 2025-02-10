@@ -65,7 +65,7 @@
             <div class="img-box">
                 <a href="https://coursera.org/share/77b3995dd458ce54583ea0f055642d49" target="_blank"
                     rel="noreferrer"><img
-                        src="/img/courses/Specialization - Build Website with HTML, JavaScript, AngularJS, and React.webp"
+                        src="https://github.com/SagoDev/Portfolio-Web-Santiago-Lanz/blob/main/img/courses/Specialization - Build Website with HTML, JavaScript, AngularJS, and React.webp?raw=true"
                         alt="certificado"></a>
             </div>
         </div>
@@ -76,7 +76,7 @@
             <div class="img-box">
                 <a href="https://coursera.org/share/c53d00f6cc670b6dba1c2257a6f98b95" target="_blank"
                     rel="noreferrer"><img
-                        src="/img/courses/Specialization - Learning MEAN Stack by Building Real world Application.webp"
+                        src="https://github.com/SagoDev/Portfolio-Web-Santiago-Lanz/blob/main/img/courses/Specialization - Learning MEAN Stack by Building Real world Application.webp?raw=true"
                         alt="certificado"></a>
             </div>
         </div>
@@ -86,7 +86,7 @@
             <p class="company">Curso Online</p>
             <div class="img-box">
                 <a href="https://coursera.org/share/ed22e46ae05bb79a81c5c588a12fce32" target="_blank"
-                    rel="noreferrer"><img src="/img/courses//Building RESTful APIs with Node.js and Express.webp"
+                    rel="noreferrer"><img src="https://github.com/SagoDev/Portfolio-Web-Santiago-Lanz/blob/main/img/courses/Building RESTful APIs with Node.js and Express.webp?raw=true"
                         alt="certificado"></a>
             </div>
         </div>
@@ -96,7 +96,7 @@
             <p class="company">Curso Online</p>
             <div class="img-box">
                 <a href="https://coursera.org/share/daaae1403b7393661235c4d8f3400093" target="_blank"
-                    rel="noreferrer"><img src="/img/courses/React Fundamentals.webp" alt="certificado"></a>
+                    rel="noreferrer"><img src="https://github.com/SagoDev/Portfolio-Web-Santiago-Lanz/blob/main/img/courses/React Fundamentals.webp?raw=true" alt="certificado"></a>
             </div>
         </div>
         <div class="resume-item">
@@ -105,7 +105,7 @@
             <p class="company">Curso Online</p>
             <div class="img-box">
                 <a href="https://coursera.org/share/786cd5bfc01294665475bc30936c5d02" target="_blank"
-                    rel="noreferrer"><img src="/img/courses/JavaScript for Web Development.webp" alt="certificado"></a>
+                    rel="noreferrer"><img src="https://github.com/SagoDev/Portfolio-Web-Santiago-Lanz/blob/main/img/courses/JavaScript for Web Development.webp?raw=true" alt="certificado"></a>
             </div>
         </div>
         <div class="resume-item">
@@ -114,7 +114,7 @@
             <p class="company">Curso Online</p>
             <div class="img-box">
                 <a href="https://coursera.org/share/89645a837aadebfdb658e67fa23c3f1c" target="_blank"
-                    rel="noreferrer"><img src="/img/courses/Build a Webpage with HTML and CSS.webp"
+                    rel="noreferrer"><img src="https://github.com/SagoDev/Portfolio-Web-Santiago-Lanz/blob/main/img/courses/Build a Webpage with HTML and CSS.webp?raw=true"
                         alt="certificado"></a>
             </div>
         </div>
@@ -124,7 +124,7 @@
             <p class="company">Curso Online</p>
             <div class="img-box">
                 <a href="https://coursera.org/share/743bf4aa41033c14219be951c2e66176" target="_blank"
-                    rel="noreferrer"><img src="/img/courses/Frontend Development using React.webp"
+                    rel="noreferrer"><img src="https://github.com/SagoDev/Portfolio-Web-Santiago-Lanz/blob/main/img/courses/Frontend Development using React.webp?raw=true"
                         alt="certificado"></a>
             </div>
         </div>
@@ -134,7 +134,7 @@
             <p class="company">Curso Online</p>
             <div class="img-box">
                 <a href="https://coursera.org/share/72e2b0cb81854df7b810e2ca8b697c08" target="_blank"
-                    rel="noreferrer"><img src="/img/courses/Frontend Development using Angular.webp"
+                    rel="noreferrer"><img src="https://github.com/SagoDev/Portfolio-Web-Santiago-Lanz/blob/main/img/courses/Frontend Development using Angular.webp?raw=true"
                         alt="certificado"></a>
             </div>
         </div>
@@ -144,7 +144,7 @@
             <p class="company">Curso Online</p>
             <div class="img-box">
                 <a href="https://coursera.org/share/9bf6eebaaa5f9c88274e11dfe552f761" target="_blank"
-                    rel="noreferrer"><img src="/img/courses/Building a Complete MEAN Stack Application.webp"
+                    rel="noreferrer"><img src="https://github.com/SagoDev/Portfolio-Web-Santiago-Lanz/blob/main/img/courses/Building a Complete MEAN Stack Application.webp?raw=true"
                         alt="certificado"></a>
             </div>
         </div>
@@ -154,7 +154,7 @@
             <p class="company">Curso Online</p>
             <div class="img-box">
                 <a href="https://coursera.org/share/cedc2944ec328401aecf2b604c84d3f7" target="_blank"
-                    rel="noreferrer"><img src="/img/courses/Libraries and Frameworks for Frontend Development.webp"
+                    rel="noreferrer"><img src="https://github.com/SagoDev/Portfolio-Web-Santiago-Lanz/blob/main/img/courses/Libraries and Frameworks for Frontend Development.webp?raw=true"
                         alt="certificado"></a>
             </div>
         </div>
@@ -164,7 +164,7 @@
             <p class="company">Curso Online - JaP Ceibal</p>
             <div class="img-box">
                 <a href="https://drive.google.com/file/d/1Y54aJsZrcrMwWFLfgWiyIKgjhMUVnIsi/view?usp=sharing"
-                    target="_blank" rel="noreferrer"><img src="/img/courses/Certificado Nivel 1 JaP.webp"
+                    target="_blank" rel="noreferrer"><img src="https://github.com/SagoDev/Portfolio-Web-Santiago-Lanz/blob/main/img/courses/Certificado Nivel 1 JaP.webp?raw=true"
                         alt="certificado"></a>
             </div>
         </div>
