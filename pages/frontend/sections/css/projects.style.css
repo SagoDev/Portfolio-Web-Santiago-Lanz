@@ -1,9 +1,4 @@
-.projects {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-
+.projects {   
     .heading {
         span {
             color: var(--main-color);
