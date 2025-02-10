@@ -1,4 +1,6 @@
 .projects {
+    height: 100%;
+    width: 100%;
     flex-direction: column;
 
     .heading {
@@ -22,8 +24,7 @@
         gap: 3rem;
 
         .project-box {
-            height: 100%;
-            width: 100%;
+
 
             h3 {
                 font-size: 3.5rem;
