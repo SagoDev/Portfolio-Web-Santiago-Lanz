@@ -1,4 +1,4 @@
-(function initializeButtons() {
+(function initialize() {
     const defaultDetail = 'about';
 
     loadDetail(defaultDetail);

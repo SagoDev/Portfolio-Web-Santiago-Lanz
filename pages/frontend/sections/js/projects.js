@@ -1,4 +1,4 @@
-(function initializeButtons() {
+(function initialize() {
     const prevBtn = document.getElementById('prevBtn');
     const nextBtn = document.getElementById('nextBtn');
 
