@@ -17,7 +17,7 @@
 
     async function loadDetail(detail) {
         const detailBox = document.getElementById('detail-box');
-        const detailHTML = await fetch(`pages/frontend/sections/html/resume.${detail}.html`);
+        const detailHTML = await fetch(`../html/resume.${detail}.html`);
         const html = await detailHTML.text();
         detailBox.innerHTML = html;
     }
