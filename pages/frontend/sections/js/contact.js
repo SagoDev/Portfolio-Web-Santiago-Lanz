@@ -1,9 +1,13 @@
 (function initialize() {
+    emailjs.init("rs07wPSmXJNBgZFlh");
+
     const form = document.querySelector('form');
     const fullName = document.getElementById('name');
     const email = document.getElementById('email');
     const subject = document.getElementById('subject');
     const mess = document.getElementById('message');
+    const errorTxtEmail = document.getElementById('email-label');
+
 
     function sendEmail() {
         const templateParams = {
@@ -12,23 +16,15 @@
             subject: subject.value,
             message: mess.value
         };
-        
+
         emailjs.send("Portofolio_e8yfabj", "Portfolio_x0zjxvx", templateParams)
-            .then(response => response.json())
-            .then(data => {
-                if (data.success) {                    
-                    Swal.fire({
-                        title: "Listo!",
-                        text: "Mensaje enviado con éxito",
-                        icon: "success"
-                    });
-                } else {
-                    Swal.fire({
-                        title: "Error",
-                        text: data.message,
-                        icon: "error"
-                    });
-                }
+            .then(response => {
+                Swal.fire({
+                    title: "¡Listo!",
+                    text: "Mensaje enviado con éxito",
+                    icon: "success"
+                });
+                form.reset();
             })
             .catch(error => {
                 Swal.fire({
@@ -43,66 +39,45 @@
     function checkInputs() {
         const inputs = document.querySelectorAll('.item');
 
-        for (const input of inputs) {
-            if (input.value === "") {
+        inputs.forEach(input => {
+            if (input.value.trim() === "") {
                 input.classList.add("error");
                 input.parentElement.classList.add("error");
             }
 
-            input.removeEventListener('keyup', handleKeyUp);
-            input.addEventListener('keyup', handleKeyUp);
-        }
-
-        function handleKeyUp(event) {
-            const input = event.target;
-            if (input.value !== "") {
-                input.classList.remove("error");
-                input.parentElement.classList.remove("error");
-            } else {
-                input.classList.add("error");
-                input.parentElement.classList.add("error");
-            }
-        }
+            input.addEventListener('keyup', (event) => {
+                if (event.target.value.trim() !== "") {
+                    event.target.classList.remove("error");
+                    event.target.parentElement.classList.remove("error");
+                } else {
+                    event.target.classList.add("error");
+                    event.target.parentElement.classList.add("error");
+                }
+            });
+        });
     }
-
 
     function checkEmail() {
         const emailRegEx = /^[\w-]+(\.[\w-]+)*@([\w-]+\.)+[a-zA-Z]{2,7}$/;
-        const errorTxtEmail = document.querySelector('.error-txt.email');
 
         if (!email.value.match(emailRegEx)) {
             email.classList.add("error");
             email.parentElement.classList.add("error");
-
-            if (email.value !== "") {
-                errorTxtEmail.innerText = "Ingresa un email válido."
-            } else {
-                errorTxtEmail.innerText = "Su email no puede estar en blanco."
-            }
-
+            errorTxtEmail.innerText = email.value !== "" ? "Ingresa un email válido." : "Su email no puede estar en blanco.";
         } else {
             email.classList.remove("error");
             email.parentElement.classList.remove("error");
+            errorTxtEmail.innerText = "";
         }
-
     }
 
+    form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        checkInputs();
+        checkEmail();
 
-
-    document.addEventListener("DOMContentLoaded", function () {
-        emailjs.init("rs07wPSmXJNBgZFlh");
-
-        form.addEventListener('submit', (e) => {
-            e.preventDefault();
-            checkInputs();
-            checkEmail();
-
-            if (!fullName.classList.contains('error') && !email.classList.contains('error') && !subject.classList.contains('error') && !mess.classList.contains('error')) {
-                sendEmail();                
-                form.reset();
-                return false;
-            }
-        });
+        if (!document.querySelector('.error')) {
+            sendEmail();
+        }
     });
-
 })();
