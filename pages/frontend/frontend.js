@@ -42,7 +42,7 @@ async function loadSection(section) {
     }
     sectionCSS.href = `./sections/css/${section}.style.css`;
 
-    // Cargar JS (Corregido)
+    // Cargar JS
     let sectionJS = document.querySelector(`script[data-section="section-script"]`);
     if (sectionJS) {
         sectionJS.remove();

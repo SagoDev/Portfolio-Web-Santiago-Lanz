@@ -6,19 +6,17 @@
     const mess = document.getElementById('message');
 
     function sendEmail() {
-        fetch("http://localhost:3000/send-email", {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({
-                name: fullName.value,
-                email: email.value,
-                subject: subject.value,
-                message: mess.value
-            })
-        })
+        const templateParams = {
+            name: fullName.value,
+            email: email.value,
+            subject: subject.value,
+            message: mess.value
+        };
+        
+        emailjs.send("Portofolio_e8yfabj", "Portfolio_x0zjxvx", templateParams)
             .then(response => response.json())
             .then(data => {
-                if (data.success) {
+                if (data.success) {                    
                     Swal.fire({
                         title: "Listo!",
                         text: "Mensaje enviado con éxito",
@@ -32,10 +30,15 @@
                     });
                 }
             })
-            .catch(error => console.error("Error:", error));
+            .catch(error => {
+                Swal.fire({
+                    title: "Error",
+                    text: "No se pudo enviar el mensaje. Intenta nuevamente.",
+                    icon: "error"
+                });
+                console.error("Error:", error);
+            });
     }
-
-
 
     function checkInputs() {
         const inputs = document.querySelectorAll('.item');
@@ -71,7 +74,7 @@
             email.classList.add("error");
             email.parentElement.classList.add("error");
 
-            if (email.value != "") {
+            if (email.value !== "") {
                 errorTxtEmail.innerText = "Ingresa un email válido."
             } else {
                 errorTxtEmail.innerText = "Su email no puede estar en blanco."
@@ -84,16 +87,22 @@
 
     }
 
-    form.addEventListener('submit', (e) => {
-        e.preventDefault();
-        checkInputs();
-        checkEmail();
 
-        if (!fullName.classList.contains('error') && !email.classList.contains('error') && !subject.classList.contains('error') && !mess.classList.contains('error')) {
-            sendEmail();
-            form.reset();
-            return false;
-        }
+
+    document.addEventListener("DOMContentLoaded", function () {
+        emailjs.init("rs07wPSmXJNBgZFlh");
+
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            checkInputs();
+            checkEmail();
+
+            if (!fullName.classList.contains('error') && !email.classList.contains('error') && !subject.classList.contains('error') && !mess.classList.contains('error')) {
+                sendEmail();                
+                form.reset();
+                return false;
+            }
+        });
     });
 
 })();
