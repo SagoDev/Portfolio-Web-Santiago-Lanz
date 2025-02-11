@@ -64,7 +64,7 @@
                 display: grid;
                 grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
                 gap: 2rem;
-                height: 30rem;
+                height: 35rem;
                 overflow: auto;
                 padding: 1rem;
 
@@ -72,7 +72,7 @@
                     background-color: var(--grey-color);
                     border-radius: .8rem;
                     padding: 3rem 2.5rem;
-                    height: calc((30em/2rem)/2);
+                    height: calc((35em/2rem)/2);
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
@@ -109,7 +109,7 @@
 
                 .skills-list {
                     display: grid;
-                    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+                    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
                     gap: 2rem;
                     height: auto;
                     overflow: visible;
