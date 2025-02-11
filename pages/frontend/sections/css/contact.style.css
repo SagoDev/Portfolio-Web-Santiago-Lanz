@@ -1,18 +1,16 @@
-.contact {    
+.contact {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 
     .contact-container {
-        display: grid;
-        grid-template-columns: 1fr 1.3fr;
-        gap: 3rem;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
 
         .contact-box {
-            h2 {
-                font-size: 4.5rem;
-            }
-
-            p {
-                font-size: 1.5rem;
-            }
+            text-align: center;
+           
 
             &:first-child {
                 align-self: center;
@@ -20,10 +18,11 @@
 
             .desc {
                 margin: 1.5rem 0 2.5rem;
+                font-size: 2rem;
             }
 
             .heading {
-                font-size: 3.5rem;
+                font-size: 4.5rem;
 
                 span {
                     color: var(--main-color);
