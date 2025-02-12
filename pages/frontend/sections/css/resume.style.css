@@ -69,7 +69,7 @@
                 padding: 1rem;
 
                 .resume-item {
-                    background-color: var(--grey-color);
+                    background-color: var(--bg-color);
                     border-radius: .8rem;
                     padding: 3rem 2.5rem;
                     height: calc((35em/2rem)/2);
@@ -123,7 +123,7 @@
                         height: auto;
                         border-radius: .8rem;
                         padding: 1rem;
-                        background-color: var(--grey-color);
+                        background-color: var(--bg-color);
                         color: var(--dark-color);
 
                         i {

@@ -5,13 +5,27 @@ document.addEventListener('DOMContentLoaded', async () => {
 });
 
 let links = document.querySelectorAll('header nav a');
+const barsBox = document.getElementById('bars');
+const sectionBox = document.getElementById('section-box');
 
 links.forEach(link => {
     link.addEventListener('click', async (e) => {
         e.preventDefault();
+
         const section = e.target.dataset.section;
+
         removeActiveFromElements(links);
         link.classList.add('active');
+
+        barsBox.classList.remove('active');
+        setTimeout(() => {
+            barsBox.classList.add('active');
+        }, 1100);
+
+        sectionBox.classList.remove('active');
+        setTimeout(() => {
+            sectionBox.classList.add('active');
+        }, 1100);
 
         await loadSection(section);
     });
@@ -25,7 +39,6 @@ function removeActiveFromElements(elements) {
 
 // Carga Dinámica de Sección
 async function loadSection(section) {
-    const sectionBox = document.getElementById('section-box');
 
     // Cargar HTML
     const sectionHTML = await fetch(`./sections/html/${section}.html`);
@@ -53,5 +66,5 @@ async function loadSection(section) {
     document.body.appendChild(sectionJS);
 
     // Cambiar Clase
-    sectionBox.className = section;
+    sectionBox.className = `${section} active`;
 }
