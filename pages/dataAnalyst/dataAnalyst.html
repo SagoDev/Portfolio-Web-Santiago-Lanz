@@ -19,31 +19,77 @@
     <header class="active">
         <a href="" class="logo">SANTIAGO<span class="desc">LANZ</span></a>
 
-        <i class='bx bx-menu' id="menu-icon"></i>
+        <!--Navbar sm/md-->
+        <nav class="navbar d-sm-inline d-lg-none">
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvasLg"
+                aria-controls="navbarOffcanvasLg" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-top" tabindex="-1" id="navbarOffcanvasLg"
+                aria-labelledby="navbarOffcanvasLgLabel">
+                <div class="offcanvas-header">
+                    <h2 class="offcanvas-title" id="offcanvasNavbarLabel">Menú</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <div class="nav-item">
+                        <a href="#ad-home" class="nav-link active">
+                            <p>INICIO</p>
+                        </a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="#ad-about" class="nav-link">
+                            <p>SOBRE MI</p>
+                        </a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="#ad-projects" class="nav-link">
+                            <p>PROJECTOS</p>
+                        </a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="#ad-contact" class="link nav-link">
+                            <p>CONTACTO</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
 
-        <nav class="navbar">
-            <a href="" data-section="home" class="section active">
+        <!--Navbar lg-->
+        <nav class="navbar d-none d-lg-flex">
+            <a href="#ad-home" class="active">
                 <p>INICIO</p>
                 <p class="dot">.</p>
             </a>
-            <a href="" data-section="resume" class="section">
+            <a href="#ad-about">
                 <p>SOBRE MI</p>
                 <p class="dot">.</p>
             </a>
-            <a href="" data-section="projects" class="section">
-                <p>DASHBOARDS</p>
+            <a href="ad-projects">
+                <p>PROJECTOS</p>
                 <p class="dot">.</p>
             </a>
-            <a href="" data-section="contact" class="section">
+            <a href="#ad-contact">
                 <p>CONTACTO</p>
                 <p class="dot">.</p>
             </a>
         </nav>
     </header>
+    <main>
+        <Section id="ad-home">
 
-    <Section>
+        </Section>
+        <Section id="ad-about">
 
-    </Section>
+        </Section>
+        <Section id="ad-projects">
+
+        </Section>
+        <Section id="ad-contact">
+
+        </Section>
+    </main>
 
     <!--custom js-->
     <script src="./dataAnalyst.js"></script>
