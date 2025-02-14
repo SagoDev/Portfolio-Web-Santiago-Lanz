@@ -19,13 +19,17 @@
 
 html {
   font-size: 62.5%;
+  height: 100%;
 }
 
 body {
-  background: var(--white-color);
+  height: 100%;
+  background: var(--grey-color);
 }
 
 header {
+  position: fixed;
+  background: var(--grey-color);
   top: 0;
   left: 0;
   width: 100%;
@@ -34,7 +38,6 @@ header {
   justify-content: space-between;
   align-items: center;
   z-index: 100;
-  
 
   .logo {
     font-size: 2.5rem;
@@ -89,7 +92,74 @@ header {
 }
 
 section {
-  width: 100%;
   height: 100vh;
   padding: 10rem 9% 2rem;
+
+  &.ad-home {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+
+    .ad-home-detail {
+      height: 100%;
+
+      h1 {
+        font-size: clamp(3.5rem, 10vw, 5.5rem);
+        font-weight: 1000;
+      }
+
+      h2 {
+        font-weight: 500;
+        font-size: 3.2rem;
+        margin-top: -1rem;
+      }
+
+      p {
+        font-size: 1.6rem;
+        margin: 1rem 0 2.5rem;
+      }
+
+      .text-detail {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        height: 85%;
+      }
+
+      .btn-sm {
+        display: flex;
+        align-items: center;
+        height: 15%;
+
+        .sm {
+          width: 100%;
+
+          a {
+            text-decoration: underline var(--black-color);
+            display: inline-flex;
+            padding: 0.8rem;
+            font-size: 1.6rem;
+            color: var(--main-color);
+            margin: 0 .8rem;
+
+            &:hover {
+              color: var(--black-color);
+            }
+          }
+        }
+      }
+    }
+
+    .bg-circle {
+      position: absolute;
+      width: 40vw;
+      height: 40vw;
+      background: var(--white-color);
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      z-index: -1;
+      overflow: hidden;
+    }
+  }
 }
