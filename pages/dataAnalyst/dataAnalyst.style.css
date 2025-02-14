@@ -75,7 +75,11 @@ header {
         margin-top: 1px;
       }
 
-      &:hover,
+      &:hover {
+        color: var(--black-color);
+        font-weight: 1000;
+      }
+
       &.active {
         color: var(--black-color);
         font-weight: 1000;
