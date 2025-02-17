@@ -103,27 +103,29 @@ section {
     .ad-home-detail {
       height: 100%;
 
-      h1 {
-        font-size: clamp(3.5rem, 10vw, 5.5rem);
-        font-weight: 1000;
-      }
-
-      h2 {
-        font-weight: 500;
-        font-size: 3.2rem;
-        margin-top: -1rem;
-      }
-
-      p {
-        font-size: 1.6rem;
-        margin: 1rem 0 2.5rem;
-      }
 
       .text-detail {
         display: flex;
         justify-content: center;
         flex-direction: column;
+        text-align: end;
         height: 85%;
+
+        h1 {
+          font-size: clamp(3.5rem, 10vw, 5.5rem);
+          font-weight: 1000;
+        }
+
+        h2 {
+          font-weight: 500;
+          font-size: 3.2rem;
+          margin-top: -1rem;
+        }
+
+        p {
+          font-size: 1.6rem;
+          margin: 1rem 0 2.5rem;
+        }
       }
 
       .btn-sm {
@@ -150,6 +152,12 @@ section {
       }
     }
 
+    .ad-home-img {      
+      img {
+        width: 100%;
+      }
+    }
+
     .bg-circle {
       position: absolute;
       width: 40vw;
@@ -157,7 +165,6 @@ section {
       background: var(--white-color);
       border-radius: 50%;
       display: flex;
-      justify-content: center;
       z-index: -1;
       overflow: hidden;
     }
