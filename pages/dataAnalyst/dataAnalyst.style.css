@@ -19,7 +19,6 @@
 
 html {
   font-size: 62.5%;
-  height: 100%;
 }
 
 body {
@@ -101,24 +100,24 @@ section {
     align-items: center;
 
     .ad-home-detail {
-      height: 100%;
-
+      height: 85%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
 
       .text-detail {
         display: flex;
         justify-content: center;
         flex-direction: column;
-        text-align: end;
-        height: 85%;
 
         h1 {
-          font-size: clamp(3.5rem, 10vw, 5.5rem);
+          font-size: clamp(1.5rem, 8vw, 5.5rem);
           font-weight: 1000;
         }
 
         h2 {
           font-weight: 500;
-          font-size: 3.2rem;
+          font-size: 2.5rem;
           margin-top: -1rem;
         }
 
@@ -128,33 +127,33 @@ section {
         }
       }
 
-      .btn-sm {
+      .ad-home-img {
         display: flex;
+        justify-content: center;
         align-items: center;
-        height: 15%;
-
-        .sm {
-          width: 100%;
-
-          a {
-            text-decoration: underline var(--black-color);
-            display: inline-flex;
-            padding: 0.8rem;
-            font-size: 1.6rem;
-            color: var(--main-color);
-            margin: 0 .8rem;
-
-            &:hover {
-              color: var(--black-color);
-            }
-          }
-        }
       }
     }
 
-    .ad-home-img {      
-      img {
+    .btn-sm {
+      display: flex;
+      align-items: center;
+      height: 15%;
+
+      .sm {
         width: 100%;
+
+        a {
+          text-decoration: underline var(--black-color);
+          display: inline-flex;
+          padding: 0.8rem;
+          font-size: 1.6rem;
+          color: var(--main-color);
+          margin: 0 .8rem;
+
+          &:hover {
+            color: var(--black-color);
+          }
+        }
       }
     }
 
