@@ -17,6 +17,7 @@
 <body>
     <!--Header-->
     <header class="active">
+
         <a href="" class="logo">SANTIAGO<span class="desc">LANZ</span></a>
 
         <!--Navbar sm/md-->
@@ -60,25 +61,21 @@
         <nav class="navbar d-none d-lg-flex">
             <a href="#ad-home" class="active">
                 <p>INICIO</p>
-                <p class="dot">.</p>
             </a>
             <a href="#ad-about">
                 <p>SOBRE MI</p>
-                <p class="dot">.</p>
             </a>
             <a href="ad-projects">
                 <p>PROJECTOS</p>
-                <p class="dot">.</p>
             </a>
             <a href="#ad-contact">
                 <p>CONTACTO</p>
-                <p class="dot">.</p>
             </a>
         </nav>
     </header>
-    <main>
+    <main class="main-sections">
         <!--Sección Bienvenida-->
-        <Section id="ad-home" class="ad-home row">
+        <section id="ad-home" class="ad-home row">
             <div class="ad-home-detail col-12 row">
                 <div class="text-detail col-12 col-lg-6 text-center text-lg-end">
                     <h1>Analista de Datos Jr.</h1>
@@ -100,16 +97,53 @@
             </div>
             <div class="bg-circle">
             </div>
-        </Section>
-        <Section id="ad-about">
+        </section>
 
-        </Section>
-        <Section id="ad-projects">
+        <!--Sección Sobre Mi-->
+        <section id="ad-about" class="ad-about">
+            <div class="personal-dashboard row">
+                <div class="dashboard-slidebar col-2">
+                    <div class="slidebar-header">
+                       <h3><i class='bx bxs-dashboard'></i> Dashboard</h3>
+                    </div>
+                    <div class="slidebar-body">
+                        <div class="profile-detail">
+                            <div class="profile-img">
+                                <img src="" alt="foto perfil">
+                            </div>
+                            <div class="profile-text">
+                                <h4>Santiago Lanz</h4>
+                            </div>
+                        </div>
+                        <div class="section-nav"></div>
+                    </div>
+                    <div class="slidebar-footer">
+                        footer
+                    </div>
+                </div>
+                <div class="dashboard-detail col-10">
+                    <div class="search-box">
+                        <nav class="navbar">
+                            <div class="container-fluid align-item-center justify-content-center">
+                                <form class="d-flex" role="search">
+                                    <input class="form-control me-2" type="search" placeholder="Search"
+                                        aria-label="Search">
+                                    <button class="btn search-btn" type="submit"><i class='bx bx-search'></i></button>
+                                </form>
+                            </div>
+                        </nav>
+                    </div>
 
-        </Section>
-        <Section id="ad-contact">
 
-        </Section>
+                </div>
+            </div>
+        </section>
+        <section id="ad-projects">
+
+        </section>
+        <section id="ad-contact">
+
+        </section>
     </main>
 
     <!--custom js-->
