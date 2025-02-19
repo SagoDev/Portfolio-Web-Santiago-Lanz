@@ -59,18 +59,10 @@
 
         <!--Navbar lg-->
         <nav class="navbar d-none d-lg-flex">
-            <a href="#ad-home" class="active">
-                <p>INICIO</p>
-            </a>
-            <a href="#ad-about">
-                <p>SOBRE MI</p>
-            </a>
-            <a href="ad-projects">
-                <p>PROJECTOS</p>
-            </a>
-            <a href="#ad-contact">
-                <p>CONTACTO</p>
-            </a>
+            <a href="#ad-home" class="active">INICIO</a>
+            <a href="#ad-about">SOBRE MI</a>
+            <a href="ad-projects">PROJECTOS</a>
+            <a href="#ad-contact">CONTACTO</a>
         </nav>
     </header>
     <main class="main-sections">
@@ -104,18 +96,19 @@
             <div class="personal-dashboard row">
                 <div class="dashboard-slidebar col-2">
                     <div class="slidebar-header">
-                       <h3><i class='bx bxs-dashboard'></i> Dashboard</h3>
+                        <h4><i class='bx bxs-dashboard'></i>Dashboard</h4>
                     </div>
                     <div class="slidebar-body">
                         <div class="profile-detail">
-                            <div class="profile-img">
-                                <img src="" alt="foto perfil">
-                            </div>
-                            <div class="profile-text">
-                                <h4>Santiago Lanz</h4>
-                            </div>
+                            <img src="/img/profiles/img-profile.png" alt="foto perfil">
+                            <h4>Santiago Lanz</h4>
                         </div>
-                        <div class="section-nav"></div>
+                        <div class="slidebar-options">
+                            <button class="slidebar-btn active" data-detail="about">Datos</button>
+                            <button class="slidebar-btn" data-detail="skills">Habilidades</button>
+                            <button class="slidebar-btn" data-detail="education">Educación</button>
+                            <button class="slidebar-btn" data-detail="experience">Experiencia</button>
+                        </div>
                     </div>
                     <div class="slidebar-footer">
                         footer

@@ -167,42 +167,69 @@ section {
       overflow: hidden;
 
       .dashboard-slidebar {
+        color: var(--white-color);
         margin: 0;
-        padding: 0;
+        padding: 0 .5rem;
         box-sizing: border-box;
-        background-color: var(--aquamarine-color);
+        background-color: rgba(86, 99, 99, 0.5);
         text-align: center;
-        padding: 0 1rem;
+        border-right: var(--aquamarine-color) solid;
 
         .slidebar-header {
           height: 10%;
-          border-bottom: var(--dark-green-color) solid;
-          padding: 1rem;
+          display: flex;
+          justify-content: center;
+          align-items: center;
         }
 
         .slidebar-body {
-          height: 87%;
+          height: 80%;
 
           .profile-detail {
-            height: 20%;
-            display: flex;
-            justify-content: center;
-            align-content: center;
-            flex-direction: column;
+            padding: 1rem;
+            height: 40%;
+            border-bottom: var(--aquamarine-color) solid;
 
-            .profile-img {}
 
-            .profile-text {}
+            img {
+              margin-bottom: 1rem;
+              width: 90px;
+              height: 90px;
+              border-radius: 100%;
+              border: 4px solid var(--aquamarine-color);
+              background: var(--grey-color);
+            }
           }
 
-          .section-nav {
-            height: 80%;
+          .slidebar-options {
+            height: 60%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            font-size: 1.8rem;
+            border-bottom: var(--aquamarine-color) solid;
+
+
+            .slidebar-btn {
+              margin-bottom: 2rem;
+              background-color: transparent;
+              color: var(--white-color);
+
+              &.active {
+                color: var(--dark-green-color);
+            }
+            }
           }
 
         }
 
         .slidebar-footer {
-          height: 6.5%;
+          height: 10%;
+          text-align: center;
+          display: flex;
+          justify-content: center;
+          align-items: center;
         }
       }
 
@@ -216,10 +243,12 @@ section {
           display: flex;
           align-items: center;
           justify-content: center;
-          background-color: rgba(108, 122, 122, 0.5);
+          background-color: rgba(86, 99, 99, 0.5);
           backdrop-filter: blur(20px);
           -webkit-backdrop-filter: blur(20px);
           height: 10%;
+          border-bottom: var(--aquamarine-color) solid;
+
 
           .search-btn {
             background: var(--white-color);
