@@ -20,6 +20,10 @@
   text-decoration: none;
 }
 
+svg {
+  fill: var(--dark-green-color);
+}
+
 html {
   font-size: 62.5%;
 }
@@ -78,8 +82,11 @@ header {
 }
 
 section {
-  height: 100vh;
   padding: 10rem 9% 2rem;
+
+  .section {
+    height: 100vh;
+  }
 
   &.ad-home {
     width: 100%;
@@ -205,8 +212,35 @@ section {
           }
 
           .icon-box {
-            font-size: 8rem;            
+            font-size: 8rem;
           }
+        }
+      }
+    }
+  }
+
+  &.ad-projects {
+    width: 100%;
+    height: 100%;
+    .projects-content {
+      height: 100%;
+
+      .section-title {
+        text-align: center;
+
+        h1 {
+          color: var(--dark-green-color);
+          font-size: 5rem;
+          font-weight: 1000;
+        }
+      }
+
+      .projects-box {
+        height: 100%;
+        padding: 5rem;
+
+        .project-card {
+          height: 50vh;
         }
       }
     }
