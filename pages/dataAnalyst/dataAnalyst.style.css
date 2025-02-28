@@ -167,11 +167,14 @@ section {
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        text-align: left;
 
-        h1 {
+        h3 {
           width: 100%;
           color: var(--dark-green-color);
+        }
+
+        p {
+          font-size: 1.5rem;
         }
 
       }
@@ -202,7 +205,7 @@ section {
           }
 
           .icon-box {
-            font-size: 8rem;
+            font-size: 8rem;            
           }
         }
       }
