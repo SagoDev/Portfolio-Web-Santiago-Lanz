@@ -85,11 +85,13 @@ section {
   padding: 10rem 9% 2rem;
 
   &.ad-home {
+    height: 100vh;
     width: 100%;
     justify-content: center;
     align-items: center;
 
     .ad-home-detail {
+      height: 85%;
       justify-content: space-between;
       align-items: center;
 
@@ -131,15 +133,14 @@ section {
         width: 100%;
 
         a {
-          text-decoration: underline var(--black-color);
           display: inline-flex;
           padding: 0.8rem;
           font-size: 1.6rem;
-          color: var(--main-color);
+          color: var(--black-color);
           margin: 0 .8rem;
 
           &:hover {
-            color: var(--black-color);
+            color: var(--dark-green-color);
           }
         }
       }
@@ -222,6 +223,26 @@ section {
         font-size: 5rem;
         font-weight: 1000;
       }
-    }    
+    }
+
+    h3 {
+      color: var(--dark-green-color);
+      font-size: 2.2rem;
+      font-weight: 1000;
+    }
+
+    p {
+      font-size: 1.4rem;
+
+      a {
+        display: inline-flex;
+        font-size: 1.6rem;
+        color: var(--black-color);
+
+        &:hover {
+          color: var(--dark-green-color);
+        }
+      }
+    }
   }
 }
