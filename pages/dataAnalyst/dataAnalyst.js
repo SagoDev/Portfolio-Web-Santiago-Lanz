@@ -3,7 +3,6 @@ let slidebarOptions = document.querySelectorAll('.ad-about .personal-dashboard .
 
 links.forEach((link => {
     link.addEventListener('click', async (e) => {
-        e.preventDefault();
 
         removeActive(links);
         link.classList.add('active');
@@ -24,3 +23,17 @@ function removeActive(elements) {
         element.classList.remove('active');
     });
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+    const sections = document.querySelectorAll("section");
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("active");
+            }
+        });
+    }, { threshold: 0.1 }); 
+    
+    sections.forEach(section => observer.observe(section));
+});

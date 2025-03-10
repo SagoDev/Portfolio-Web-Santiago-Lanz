@@ -42,6 +42,7 @@ header {
   justify-content: space-between;
   align-items: center;
   z-index: 100;
+  opacity: 0;
 
   .logo {
     font-size: 2rem;
@@ -68,21 +69,29 @@ header {
       text-decoration: none;
       color: var(--dark-color);
 
-      &:hover {
-        color: var(--dark-green-color);
-        font-weight: 1000;
-      }
-
+      &:hover,
       &.active {
         color: var(--dark-green-color);
         font-weight: 1000;
       }
     }
   }
+
+  &.active {
+    animation: show-header .2s linear forwards;
+    animation-delay: .5s;
+  }
 }
 
 section {
   padding: 10rem 9% 2rem;
+  opacity: 0;
+  visibility: hidden;
+
+  &.active {
+    animation: show-content 1.5s linear forwards;
+    animation-delay: 0.3s;
+  }
 
   .section-title {
     margin-bottom: 2rem;
@@ -172,6 +181,7 @@ section {
   &.ad-about {
     width: 100%;
 
+
     .about-content {
       height: 100%;
 
@@ -252,7 +262,6 @@ section {
   &.ad-contact {
     width: 100%;
     height: 100%;
-
 
     .row {
       justify-content: center;
@@ -351,5 +360,22 @@ section {
         }
       }
     }
+  }
+}
+
+@keyframes show-header {
+
+  100% {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+@keyframes show-content {
+
+  100% {
+    visibility: visible;
+    opacity: 1;
+    overflow: auto;
   }
 }
