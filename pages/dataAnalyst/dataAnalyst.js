@@ -1,39 +1,23 @@
-let links = document.querySelectorAll('header nav a');
-let slidebarOptions = document.querySelectorAll('.ad-about .personal-dashboard .dashboard-slidebar .slidebar-body .slidebar-options button');
-
-links.forEach((link => {
-    link.addEventListener('click', async (e) => {
-
-        removeActive(links);
-        link.classList.add('active');
-    });
-}));
-
-slidebarOptions.forEach((option => {
-    option.addEventListener('click', async (e) => {
-        e.preventDefault();
-
-        removeActive(slidebarOptions);
-        option.classList.add('active');
-    });
-}));
-
-function removeActive(elements) {
-    elements.forEach(element => {
-        element.classList.remove('active');
-    });
-}
-
 document.addEventListener("DOMContentLoaded", () => {
-    const sections = document.querySelectorAll("section");
+    document.querySelector('header nav')?.addEventListener('click', (e) => {
+        if (e.target.matches('a')) {
+            document.querySelector('header nav a.active')?.classList.remove('active');
+            e.target.classList.add('active');
+        }
+    });
+
+    document.querySelector('.dashboard-slidebar .slidebar-body')?.addEventListener('click', (e) => {
+        if (e.target.matches('button')) {
+            document.querySelector('.dashboard-slidebar .slidebar-body button.active')?.classList.remove('active');
+            e.target.classList.add('active');
+        }
+    });
 
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add("active");
-            }
+            entry.target.classList.toggle("active", entry.isIntersecting);
         });
-    }, { threshold: 0.1 }); 
-    
-    sections.forEach(section => observer.observe(section));
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll("section").forEach(section => observer.observe(section));
 });
