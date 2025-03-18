@@ -4,14 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
             document.querySelector('header nav a.active')?.classList.remove('active');
             e.target.classList.add('active');
         }
-    });
-
-    document.querySelector('.dashboard-slidebar .slidebar-body')?.addEventListener('click', (e) => {
-        if (e.target.matches('button')) {
-            document.querySelector('.dashboard-slidebar .slidebar-body button.active')?.classList.remove('active');
-            e.target.classList.add('active');
-        }
-    });
+    });    
 
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {

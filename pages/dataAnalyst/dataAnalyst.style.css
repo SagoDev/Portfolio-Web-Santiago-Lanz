@@ -90,7 +90,7 @@ section {
 
   &.active {
     animation: show-content 1.5s linear forwards;
-    animation-delay: 0.3s;
+    animation-delay: 0.2s;
   }
 
   .section-title {
@@ -181,7 +181,6 @@ section {
   &.ad-about {
     width: 100%;
 
-
     .about-content {
       height: 100%;
 
@@ -221,6 +220,8 @@ section {
           color: var(--dark-green-color);
           min-height: 150px;
           max-height: 200px;
+          visibility: hidden;
+          opacity: 0;
 
           h1 {
             font-size: 2rem;
@@ -229,6 +230,21 @@ section {
 
           .icon-box {
             font-size: 8rem;
+          }
+        }
+
+      }
+    }
+
+    &.active {
+      opacity: 1;
+      visibility: visible;
+
+      .about-content {
+        .about-skills {
+          .skill-card {
+            animation: show-content 0.4s ease-in-out both;
+            animation-delay: calc(0.2s*var(--i));
           }
         }
       }
@@ -254,6 +270,29 @@ section {
 
         &:hover {
           color: var(--dark-green-color);
+        }
+      }
+    }
+
+    .row {
+      .projects-box {
+        .project-card {
+          visibility: hidden;
+          opacity: 0;
+        }
+      }
+    }
+
+    &.active {
+      opacity: 1;
+      visibility: visible;
+
+      .row {
+        .projects-box {
+          .project-card {
+            animation: show-content 0.4s ease-in-out both;
+            animation-delay: calc(0.5s*var(--p));
+          }
         }
       }
     }
