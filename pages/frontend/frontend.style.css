@@ -29,17 +29,13 @@ body {
 
 header {
     position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 2rem 9%;
     background: var(--dark-color);
+    width: 100%;
+    padding: 1rem 9%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 100;
-    visibility: hidden;
-    opacity: 0;
 
     #menu-icon {
         font-size: 4rem;
@@ -71,11 +67,11 @@ header {
     .offcanvas {
         background: var(--dark-color);
         color: var(--bg-color);
-        text-align: center;        
-    }  
+        text-align: center;
+    }
 
-    .navbar-toggler{
-            background: var(--bg-color);
+    .navbar-toggler {
+        background: var(--bg-color);
     }
 
     &.active {
