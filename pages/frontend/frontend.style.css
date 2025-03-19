@@ -55,16 +55,27 @@ header {
 
     nav a {
         font-size: 2rem;
-        color: var(--bg-color);
+        color: var(--disabled-color);
         font-weight: 500;
         margin-left: 3.5rem;
         transition: .5s;
         text-decoration: none;
+        text-align: center;
 
         &:hover,
         &.active {
             color: var(--main-color);
         }
+    }
+
+    .offcanvas {
+        background: var(--dark-color);
+        color: var(--bg-color);
+        text-align: center;        
+    }  
+
+    .navbar-toggler{
+            background: var(--bg-color);
     }
 
     &.active {

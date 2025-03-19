@@ -22,7 +22,37 @@
 
         <i class='bx bx-menu' id="menu-icon"></i>
 
-        <nav class="navbar">
+        <!--Navbar sm/md-->
+        <nav class="navbar d-sm-inline d-lg-none">
+            <button class="navbar-toggler " type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvasLg"
+                aria-controls="navbarOffcanvasLg" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-top" tabindex="-1" id="navbarOffcanvasLg"
+                aria-labelledby="navbarOffcanvasLgLabel">
+                <div class="offcanvas-header">
+                    <h2 class="offcanvas-title" id="offcanvasNavbarLabel">Menú</h2>
+                    <button type="button" class="btn-close bg-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body d-flex flex-column justify-content-center align-item-center">
+                    <div class="nav-item">
+                        <a href="" data-section="home" class="active">Inicio</a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="" data-section="resume">Sobre Mi</a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="" data-section="projects">Projectos</a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="" data-section="contact">Contacto</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!--Navbar lg-->
+        <nav class="navbar navbar-lg d-none d-lg-flex">
             <a href="" data-section="home" class="active">Inicio</a>
             <a href="" data-section="resume">Sobre Mi</a>
             <a href="" data-section="projects">Projectos</a>
