@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
+
+:root {
+    --grey-color: #cccccc;
+    --blue-color: #0f1829;
+    --white-color: #ffffff;
+    --black-color: #000000;
+    --dark-green-color: #295b5d;
+    --soft-green-color: #12d6bd;
+    --aquamarine-color: #c2eeeb;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    text-decoration: none;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+svg {
+    fill: var(--dark-green-color);
+}
+
+body {
+    height: 100%;
+    background: var(--blue-color);
+}
+
+header {
+    position: fixed;
+    background: var(--blue-color);
+    width: 100%;
+    padding: 1rem 9%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    opacity: 0;
+
+    .logo {
+        font-size: 2rem;
+        font-weight: 500;
+        text-decoration: none;
+        color: var(--grey-color);
+
+        .desc {
+          font-weight: 900;
+        }
+    }
+
+    .navbar {
+        gap: 3rem;
+
+        a {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            font-size: 1.6rem;
+            text-decoration: none;
+            color: var(--grey-color);            
+        }
+    }
+
+    &.active {
+        animation: show-header .2s linear forwards;
+        animation-delay: .5s;
+    }
+
+    .social-media{
+       .sm {
+
+                a {
+                    text-decoration: none;
+                    display: inline-flex;
+                    padding: 0.8rem;
+                    border: 0.2rem solid var(--grey-color);
+                    border-radius: 50%;
+                    font-size: 1rem;
+                    color: var(--grey-color);
+                    margin: 0 .8rem;
+                    transition: .5s;
+                }
+                a:hover {
+                    background: var(--grey-color);
+                    color: var(--blue-color);                   
+                }           
+            }
+        }
+}
+
+@keyframes show-header {
+
+    100% {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+@keyframes show-content {
+
+    100% {
+        visibility: visible;
+        opacity: 1;
+        overflow: auto;
+    }
+}
