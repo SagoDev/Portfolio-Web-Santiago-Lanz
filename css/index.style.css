@@ -75,7 +75,7 @@ header {
             flex-direction: column;
             align-items: center;
             text-align: center;
-            font-size: 1.6rem;
+            font-size: 1.8rem;
             text-decoration: none;
             color: var(--grey-color);
             transition: color 0.3s ease;
@@ -128,47 +128,56 @@ header {
 main {
     .container {
         .row {
-            section.home {
-                height: 100vh;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
+            section {
+                opacity: 0;
+                visibility: hidden;
 
-                .home-img {
-                    img {
-                        width: 180px;
-                        height: 180px;
-                        border-radius: 50%;
-                        overflow: hidden;
-                        border: 4px solid var(--contrast-color);
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                    }
-                }
+                &.home {
+                    height: 100vh;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
 
-
-                .home-mainText {
-                    color: var(--grey-color);
-                    text-align: center;
-
-                    h1.myName {
-                        font-size: 4rem;
-
-                        span {
-                            color: var(--contrast-color);
+                    .home-img {
+                        img {
+                            width: 180px;
+                            height: 180px;
+                            border-radius: 50%;
+                            overflow: hidden;
+                            border: 4px solid var(--contrast-color);
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
                         }
                     }
 
-                    p.profiles {
-                        font-size: 2rem;
-                    }
-
-                    .address {
+                    .home-mainText {
+                        color: var(--grey-color);
                         text-align: center;
-                        font-size: 1.4rem;
+
+                        h1.myName {
+                            font-size: 8rem;
+
+                            span {
+                                color: var(--contrast-color);
+                            }
+                        }
+
+                        p.profiles {
+                            font-size: 2.2rem;
+                        }
+
+                        .address {
+                            text-align: center;
+                            font-size: 1.8rem;
+                        }
                     }
+                }
+
+                &.active {
+                    animation: show-content .8s linear forwards;
+                    animation-delay: .8s;
                 }
             }
         }
