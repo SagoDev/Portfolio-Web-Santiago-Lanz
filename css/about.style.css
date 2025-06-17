@@ -1,13 +1,17 @@
 .container {
-    .row {
-        section {
-            &.about {
-                padding-top: 10rem;
+    section {
+        padding: 0 12rem 0 12rem;
+        .row {
+            .about {                
                 height: 100vh;
                 display: flex;
                 flex-direction: column;
                 color: var(--grey-color);
-                font-size: 1.8rem;
+                font-size: 2rem;
+                padding-top: 10rem;
+                text-align: justify;
+                opacity: 0;
+                visibility: hidden;
 
                 .about-hi {
                     .hi {
